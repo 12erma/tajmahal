@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+     
+     *{
+   
+      padding: 0px;
+      margin: 0px;
+     }
+      .container {
+        position: relative;
+
+        height: 1000px;
+        width: 100%;
+        background-color: skyblue;
+      }
+
+      .p1 {
+        position: absolute;
+        left: 35px;
+        top: 200px;
+        height: 0;
+        width: 40px;
+        border-bottom: 350px solid white;
+        border-left: 15px solid skyblue;
+        border-right: 15px solid skyblue;
+      }
+      .base {
+        position: absolute;
+        left: 30px;
+        top: 570px;
+        height: 50px;
+        width: 1013px;
+        background-color: white;
+      }
+
+      .rect1 {
+        position: absolute;
+        height: 20px;
+        width: 85px;
+        top: 550px;
+        left: 20px;
+        background-color: aliceblue;
+        border: 5px whitesmoke solid;
+      }
+      .rect2 {
+        position: absolute;
+        height: 20px;
+        width: 73px;
+        top: 430px;
+        left: 27px;
+        background-color: aliceblue;
+        border: 5px whitesmoke solid;
+      }
+      .rect3 {
+        position: absolute;
+        height: 20px;
+        width: 60px;
+        top: 310px;
+        left: 33px;
+        background-color: aliceblue;
+        border: 5px whitesmoke solid;
+      }
+      .rect4 {
+        position: absolute;
+        height: 20px;
+        width: 60px;
+        top: 190px;
+        left: 35px;
+        background-color: aliceblue;
+        border: 5px whitesmoke solid;
+      }
+      .rect5 {
+        position: absolute;
+        height: 15px;
+        width: 70px;
+        top: 150px;
+        left: 35px;
+        background-color: white;
+        
+      }
+      .p2 {
+        position: absolute;
+        bottom: 450px;
+        left: 975px;
+
+        width: 40px;
+
+        border-bottom: 350px solid white;
+        border-left: 15px solid skyblue;
+        border-right: 15px solid skyblue;
+      }
+   
+
+      .pisq {
+        display: flex;
+        justify-content: space-around;
+        position: absolute;
+        left: 35px;
+        top: 150px;
+        height: 40px;
+        width: 70px;
+        background-color: white;
+        border-radius: 330px 330px 0px 0px;
+      }
+      .pil {
+        position: absolute;
+        top: 0px;
+        right: 300px;
+      }
+      .sq1 {
+        margin-top: 30px;
+        height: 20px;
+        width: 18px;
+        background-color: skyblue;
+
+        border-radius: 20px 20px 0px 0px;
+      }
+      .sq2 {
+        margin-top: 30px;
+        height: 20px;
+        width: 18px;
+        background-color: skyblue;
+        border-radius: 20px 20px 0px 0px;
+      }
+      .sq3 {
+        margin-top: 30px;
+        height: 20px;
+        width: 18px;
+        background-color: skyblue;
+        border-radius: 20px 20px 0px 0px;
+      }
+      .trap {
+        position: absolute;
+        top: 165px;
+        left: 25px;
+        width: 60px;
+        border-top: 10px whitesmoke solid;
+        border-left: 16px solid transparent;
+        border-right: 16px solid transparent;
+      }
+      .hemi {
+        position: absolute;
+        top: 120px;
+        left: 35px;
+        height: 30px;
+        width: 70px;
+        background-color: white;
+        border-radius: 90px 90px 0px 0px;
+      }
+      .trapsmall {
+        position: absolute;
+        top: 111px;
+        left: 55px;
+        width: 8px;
+        border-bottom: 10px black solid;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+      }
+      .vline {
+        position: absolute;
+        top: 61px;
+        left: 67px;
+        height: 50px;
+        width: 2px;
+        background-color: black;
+      }
+      .circbig {
+        position: absolute;
+        top: 89px;
+        left: 61px;
+        height: 15px;
+        width: 15px;
+        border-radius: 100px;
+        background-color: black;
+      }
+
+      .circ {
+        position: absolute;
+        top: 70px;
+        left: 63px;
+        height: 10px;
+        width: 10px;
+        border-radius: 100px;
+        background-color: black;
+      }
+      .tri {
+        position: absolute;
+        top: 52px;
+        left: 63px;
+        height: 0;
+        width: 0;
+        border-bottom: 10px solid black;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+      }
+      .smallpl {
+        position: absolute;
+        top: 270px;
+        left: 168px;
+        width: 45px;
+        border-bottom: 300px solid white;
+        border-left: 15px solid skyblue;
+        border-right: 15px solid skyblue;
+      }
+      .rects1 {
+        position: absolute;
+        top: 255px;
+        left: 169px;
+        height: 15px;
+        width: 60px;
+        border: 5px whitesmoke solid;
+        background-color: aliceblue;
+      }
+      .rects2 {
+        position: absolute;
+        top: 355px;
+        left: 166px;
+        height: 15px;
+        width: 65px;
+        border: 5px whitesmoke solid;
+        background-color: aliceblue;
+      }
+      .rects3 {
+        position: absolute;
+        top: 475px;
+        left: 162px;
+        height: 15px;
+        width: 74px;
+        border: 5px whitesmoke solid;
+        background-color: aliceblue;
+      }
+      .sq_r {
+        display: flex;
+        justify-content: space-around;
+        position: absolute;
+        left: 175px;
+        top: 205px;
+        height: 50px;
+        width: 60px;
+        background-color: white;
+      }
+      .sqt1 {
+        margin-top: 5px;
+        height: 45px;
+        width: 10px;
+        background-color: skyblue;
+
+        border-radius: 20px 20px 0px 0px;
+      }
+      .sqt2 {
+        margin-top: 5px;
+        height: 45px;
+        width: 10px;
+        background-color: skyblue;
+        border-radius: 20px 20px 0px 0px;
+      }
+      .sqt3 {
+        margin-top: 5px;
+        height: 45px;
+        width: 10px;
+        background-color: skyblue;
+        border-radius: 20px 20px 0px 0px;
+      }
+      .traps {
+        position: absolute;
+        top: 195px;
+        left: 162px;
+        width: 60px;
+        border-top: 10px whitesmoke solid;
+        border-left: 13px solid transparent;
+        border-right: 13px solid transparent;
+      }
+      .hemism {
+        position: absolute;
+        top: 165px;
+        left: 170px;
+        height: 30px;
+        width: 65px;
+        background-color: white;
+        border-radius: 90px 90px 0px 0px;
+      }
+      .vlineli {
+        position: absolute;
+        top: 115px;
+        left: 200px;
+        height: 50px;
+        width: 2px;
+        background-color: black;
+      }
+      .circbigli {
+        position: absolute;
+        top: 148px;
+        left: 194px;
+        height: 15px;
+        width: 15px;
+        border-radius: 100px;
+        background-color: black;
+      }
+
+      .circli {
+        position: absolute;
+        top: 127px;
+        left: 196px;
+        height: 10px;
+        width: 10px;
+        border-radius: 100px;
+        background-color: black;
+      }
+      .trili {
+        position: absolute;
+        top: 113px;
+        left: 196px;
+        height: 0;
+        width: 0;
+        border-bottom: 10px solid black;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+      }
+      .pilright {
+        position: absolute;
+        left: 650px;
+      }
+      .baseli {
+        position: absolute;
+        left: 50px;
+        top: 552px;
+        height: 15px;
+        width: 950px;
+        border: 7px white solid;
+        background-color: whitesmoke;
+      }
+      .rbox {
+        position: absolute;
+        top: 263px;
+        left: 270px;
+        width: 170px;
+        height: 290px;
+        background-color: white;
+      }
+
+      .lbox {
+        position: absolute;
+        left: 350px;
+      }
+      background-image {
+        z-index: 0;
+      }
+
+      .rbox {
+        display: flex;
+      }
+
+      .window1 {
+        position: absolute;
+        top: 70px;
+        left: 100px;
+        width: 50px;
+        height: 70px;
+        background-color: rgba(88, 53, 121, 0.679);
+        border-radius: 20px 20px 0px 0px;
+        z-index: 1;
+      }
+      .window2 {
+        position: absolute;
+        top: 70px;
+        left: 20px;
+        width: 50px;
+        height: 70px;
+        background-color: rgba(88, 53, 121, 0.679);
+        border-radius: 20px 20px 0px 0px;
+      }
+      .window3 {
+        position: absolute;
+        top: 219px;
+        left: 100px;
+        width: 50px;
+        height: 70px;
+        background-color: rgba(88, 53, 121, 0.679);
+        border-radius: 20px 20px 0px 0px;
+      }
+      .window4 {
+        position: absolute;
+        left: 20px;
+        top: 219px;
+        width: 50px;
+        height: 70px;
+        background-color: rgba(88, 53, 121, 0.679);
+        border-radius: 20px 20px 0px 0px;
+      }
+      .trio {
+        position: absolute;
+        left: 33px;
+        top: 66px;
+        height: 0;
+        width: 0;
+        border-bottom: 5px rgba(88, 53, 121, 0.679) solid;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+      }
+      .trio1 {
+        position: absolute;
+        left: 112px;
+        top: 66px;
+        height: 0;
+        width: 0;
+        border-bottom: 5px rgba(88, 53, 121, 0.679) solid;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+      }
+      .trio2 {
+        position: absolute;
+        left: 33px;
+        top: 215px;
+        height: 0;
+        width: 0;
+        border-bottom: 5px rgba(88, 53, 121, 0.679) solid;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+      }
+      .trio3 {
+        position: absolute;
+        left: 112px;
+        top: 215px;
+        height: 0;
+        width: 0;
+        border-bottom: 5px rgba(88, 53, 121, 0.679) solid;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+      }
+      .line1 {
+        position: absolute;
+        top: 212px;
+        left: 260px;
+        height: 340px;
+        width: 12px;
+        background-color: whitesmoke;
+        z-index: 1;
+      }
+      .line2 {
+        position: absolute;
+        top: 212px;
+        left: 350px;
+        height: 340px;
+        width: 12px;
+        background-color: whitesmoke;
+      }
+      .line3 {
+        position: absolute;
+        top: 212px;
+        left: 430px;
+        height: 340px;
+        width: 12px;
+        background-color: whitesmoke;
+        z-index: 1;
+      }
+      .line4 {
+        position: absolute;
+        top: 213px;
+        left: 300px;
+        height: 50px;
+        width: 12px;
+        background-color: whitesmoke;
+      }
+      .line5 {
+        position: absolute;
+        top: 213px;
+        left: 741px;
+        height: 50px;
+        width: 12px;
+        background-color: whitesmoke;
+      }
+      .cir1 {
+        position: absolute;
+        top: 209px;
+        left: 259px;
+        height: 8px;
+        width: 14px;
+        background-color: rgba(155, 155, 155, 0.915);
+        border-radius: 0px 0px 50px 50px;
+        z-index: 1;
+      }
+      .cir2 {
+        position: absolute;
+        top: 204px;
+        left: 259px;
+        height: 8px;
+        width: 14px;
+        background-color: white;
+        border-radius: 50px 50px 0px 0px;
+        z-index: 3;
+      }
+      .ci1 {
+        position: absolute;
+        top: 209px;
+        left: 740px;
+        height: 8px;
+        width: 14px;
+        background-color: rgba(155, 155, 155, 0.915);
+        border-radius: 0px 0px 50px 50px;
+        z-index: 1;
+      }
+      .ci2 {
+        position: absolute;
+        top: 204px;
+        left: 740px;
+        height: 8px;
+        width: 14px;
+        background-color: white;
+        border-radius: 50px 50px 0px 0px;
+        z-index: 3;
+      }
+      .cir3 {
+        position: absolute;
+        left: 40px;
+      }
+      .cir4 {
+        position: absolute;
+        left: 90px;
+      }
+      .cir5 {
+        position: absolute;
+        left: 170px;
+      }
+      .tr1 {
+        position: absolute;
+        height: 0;
+        width: 0;
+        border-left: 5px transparent solid;
+        border-right: 5px transparent solid;
+        border-bottom: 10px black solid;
+      }
+
+      .pos1 {
+        position: absolute;
+        left: 261px;
+        top: 196px;
+        z-index: 1;
+      }
+      .pos2 {
+        position: absolute;
+        left: 301px;
+        top: 196px;
+        z-index: 0;
+      }
+      .pos3 {
+        position: absolute;
+        left: 351px;
+        top: 196px;
+        z-index: 0;
+      }
+
+      .pos4 {
+        position: absolute;
+        left: 431px;
+        top: 196px;
+        z-index: 2;
+      }
+      .mline2 {
+        position: absolute;
+        left: 350px;
+      }
+      .psq1 {
+        display: flex;
+        justify-content: space-around;
+        position: absolute;
+        left: 370px;
+        top: 150px;
+        height: 120px;
+        width: 80px;
+        background-color: white;
+        border-radius: 330px 330px 0px 0px;
+        z-index: 0;
+      }
+      .sq5 {
+        margin-top: 30px;
+        height: 80px;
+        width: 18px;
+        background-color: skyblue;
+
+        border-radius: 20px 20px 0px 0px;
+      }
+      .sq6 {
+        margin-top: 30px;
+        height: 80px;
+        width: 18px;
+        background-color: skyblue;
+        border-radius: 20px 20px 0px 0px;
+      }
+      .sq7 {
+        margin-top: 30px;
+        height: 80px;
+        width: 18px;
+        background-color: skyblue;
+        border-radius: 20px 20px 0px 0px;
+      }
+      .arrr {
+        position: absolute;
+        left: 340px;
+      }
+      .rigarr {
+        position: absolute;
+        left: 230px;
+      }
+      .pi3 {
+        position: absolute;
+        left: 742px;
+        top: 196px;
+      }
+      .mainbor{
+        position: absolute;
+        left: 55px;
+        top: 161px;
+height: 100px;
+        width: 370px;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-top: 6px solid #dddddd;
+    border-radius: 50% 50% 0 0;
+    z-index: 0;
+   
+      }
+       
+
+   
+      .maintrap{
+        position: absolute;
+        top: 168px;
+        left: 200px;
+        width: 170px;
+        border-top: 25px solid white;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+      }
+      .main {
+        position: absolute;
+        top: 202px;
+        left: 212px;
+        height: 340px;
+        width: 168px;
+        background-color: white;
+        z-index: 1;
+      }
+      .m {
+        position: absolute;
+        bottom: 340px;
+        left: 1px;
+        height: 3px;
+        width: 166px;
+        border: 10px solid whitesmoke;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+      }
+      .main1 {
+        position: absolute;
+        left: 5px;
+        top: 30px;
+        height: 300px;
+        width: 125px;
+        border: 16px solid rgb(202, 202, 202);
+        border-bottom: none;
+      }
+      .main2 {
+        position: absolute;
+        left: 28px;
+        top: 143px;
+        height: 200px;
+        width: 110px;
+
+        background-color: skyblue;
+      }
+      .main3 {
+        position: absolute;
+        top: 113px;
+        left: 28px;
+        height: 30px;
+        width: 110px;
+        border-radius: 50px 50px 0px 0px;
+        background-color: skyblue;
+      }
+      .main4 {
+        position: absolute;
+        top: 105px;
+        left: 48px;
+        border-left: 35px solid transparent;
+        border-right: 35px solid transparent;
+        border-bottom: 10px skyblue solid;
+      }
+      .mainbox{
+        position: absolute;
+        top: 155px;
+        left: 194px;
+        height: 12px;
+        width: 200px;
+        background-color: white;
+        z-index: 0;
+      }
+      .mainbox1{
+        position: absolute;
+        top:140px;
+        left: 190px;
+        height: 50px;
+        width: 210px;
+       border: 10px whitesmoke;
+        border-radius:60px 60px 0px 0px ;
+        rotate: 180deg;
+        z-index: 0;
+        background-color: whitesmoke;
+      }
+        
+      .tomb{
+        position:absolute;
+        top: 70px;
+        left: 189px;
+        height: 50px;
+        width: 190px;
+       border: 10px whitesmoke solid;
+        border-radius:60px 60px 0px 0px ;
+        background-color: whitesmoke;
+
+
+      }
+      .tombtri{
+        position: absolute;
+        top: 10px;
+        left: 204px;
+        height: 0;
+        width: 10px;
+        border-bottom: 80px white solid;
+        border-right: 85px solid transparent;
+        border-left: 85px transparent solid;
+      
+      }
+      .dot1{
+        height: 5px;
+        width: 5px;
+        background-color: black;
+        border-radius: 100%;
+        z-index: 2;
+      }
+      .dot2{
+        height: 5px;
+        width: 5px;
+        background-color: black;
+        border-radius: 100px;
+        z-index: 2;
+      }
+      .dot3{
+        height: 5px;
+        width: 5px;
+        background-color: black;
+        z-index: 2; border-radius: 100%;
+
+      }
+      .dot4{
+        height: 5px;
+        width: 5px;
+        background-color: black;
+        border-radius: 100%;
+        z-index: 2;
+      }
+      .dot5{
+        height: 5px;
+        width: 5px;
+        background-color: black;
+        border-radius: 100%;
+        z-index: 2;
+      }
+      .dot6{
+        height: 5px;
+        width: 5px;
+        background-color: black;
+        border-radius: 100%;
+        z-index: 2;
+      }
+      .dot7{
+        height: 5px;
+        width: 5px;
+        background-color: black;
+        border-radius: 100%;
+        z-index: 2;
+      }
+      .dot8{
+        height: 5px;
+        width: 5px;
+        background-color: black;
+        border-radius: 100%;
+        z-index: 2;
+      }
+      .dot9{
+        height: 5px;
+        width: 5px;
+        background-color: black;
+        border-radius: 100%;
+        z-index: 2;
+      }
+      .dot10{
+        height: 5px;
+        width: 5px;
+        background-color: black;
+        border-radius: 100%;
+        z-index: 2;
+      }
+      .dot11{
+        height: 5px;
+        width: 5px;
+        background-color: black;
+        border-radius: 100%;
+        z-index: 2;
+      }
+      .dot12{
+        height: 5px;
+        width: 5px;
+        background-color: black;
+        border-radius: 100%;
+        z-index: 2;
+      }
+      .dot{
+
+        height: 20px;
+        width: 120px;
+        display: flex;
+       gap: 5px;
+        margin-left: 235px;
+        margin-top: 70px;
+        z-index: 2;
+      }
+      .win1{
+        position: absolute;
+        top:130px;
+        left: 53px;
+        height: 85px;
+        width: 55px;
+        background-color: black;
+        border-radius: 50px 50px 0px 0px;
+ background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHklEQVQIW2PcsGHDfwYo0NOzZmAkLHDv3mu4FpBOADKwDp1X0Jv0AAAAAElFTkSuQmCC) repeat;
+ border: 3px white solid;
+}
+      .win2{
+        position: absolute;
+        top:258px;
+        left: 53px;
+        height: 85px;
+        width: 55px;
+        background-color: black;
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHklEQVQIW2PcsGHDfwYo0NOzZmAkLHDv3mu4FpBOADKwDp1X0Jv0AAAAAElFTkSuQmCC) repeat;
+        border-radius: 50px 50px 0px 0px;
+        border: 3px white solid;
+
+      }
+      .wins1{
+       position: absolute;
+       top: 29px;
+       left: 13px;
+        height: 35px;
+        width: 15px;
+        background-color: black;
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHklEQVQIW2PcsGHDfwYo0NOzZmAkLHDv3mu4FpBOADKwDp1X0Jv0AAAAAElFTkSuQmCC) repeat;
+        border-radius: 50px 50px 0px 0px;
+        border: 3px white solid;
+      }
+      .arc{
+        position: absolute;
+        left: 282px;
+        bottom: 145px;
+        border-bottom: 3px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 10px solid transparent;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+      }
+      .border1{
+        position: absolute;
+        top: 255px;
+        left: 30px;
+        height: 0px;
+        width: 160px;
+        border: 5px solid whitesmoke;
+      }
+      .border2{
+        position: absolute;
+        top: 260px;
+        left: 390px;
+        height: 0px;
+        width: 160px;
+        border: 5px solid whitesmoke;
+      }
+     
+     .co{
+        height: 100px;
+        width: 100%;
+        background-color: skyblue;     }
+        
+        .trapz{
+            position: absolute;
+            top: 6px;
+            left: 283px;
+            width: 12px;
+            border-bottom: 10px solid black;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+        }
+        .hemicir{
+            width: 13px;
+            height: 10px;
+            background-color: black;
+            border-radius: 0 0 50% 50%
+        }
+        .hemitrap{
+            height: 0px;
+            width: 3px;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 10px solid black;
+        }
+        .linee{
+            position: absolute;
+            bottom: 83px;
+            left: 292px;
+            width: 3px;
+            height: 80px;
+            background-color: black;
+        }
+        .circle{
+            bottom: 166px;
+            position: absolute;
+        left: 225px;
+        }
+        .circle1{
+            bottom: 230px;
+            position: absolute;
+        left: 225px;
+        }
+        .circl2{
+      top: -130px;
+          left: 456px;
+            position: absolute;
+   
+        }
+        .hemiset{
+            bottom: 100px;
+            position: absolute;
+        left: 287px;
+        }
+        .tritop{
+            height: 0;
+            width: 0;
+            top: 58px;
+            left: 62.5px;
+            position: absolute;
+            border-left: 5px transparent solid;
+            border-right: 5px transparent solid;
+            border-bottom: 10px black solid; 
+        }
+    </style>
+  </head>
+  <body> 
+    <div class="co"></div>
+    <div class="container">
+      <div class="p1"></div>
+      <div class="baseli"></div>
+      <div class="base"></div>
+
+      <div class="rect1"></div>
+      <div class="rect2"></div>
+      <div class="rect3"></div>
+      <div class="rect4"></div>
+      <div class="rect5"></div>
+      <div class="pisq">
+        <div class="sq1"></div>
+        <div class="sq2"></div>
+        <div class="sq3"></div>
+      </div>
+      <div class="hemi"></div>
+      <div class="trapsmall"></div>
+      <div class="vline"></div>
+      <div class="trap"></div>
+      <div class="circ"></div>
+      <div class="circbig"></div>
+      <div class="tri"></div>
+      <div class="p2"></div>
+      <div class="pil">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+        <div class="pisq">
+          <div class="sq1"></div>
+          <div class="sq2"></div>
+          <div class="sq3"></div>
+        </div>
+        <div class="hemi"></div>
+        <div class="trapsmall"></div>
+        <div class="vline"></div>
+        <div class="trap"></div>
+        <div class="circ"></div>
+        <div class="circbig"></div>
+        <div class="tri"></div>
+      </div>
+      <div class="smallpl"></div>
+      <div class="rects1"></div>
+      <div class="rects2"></div>
+      <div class="rects3"></div>
+      <div class="sq_r">
+        <div class="sqt1"></div>
+        <div class="sqt2"></div>
+        <div class="sqt3"></div>
+      </div>
+      <div class="traps"></div>
+      <div class="hemism"></div>
+      <div class="circli"></div>
+      <div class="circbigli"></div>
+      <div class="trili"></div>
+      <div class="vlineli"></div>
+      <div class="pilright">
+        <div class="smallpl"></div>
+        <div class="rects1"></div>
+        <div class="rects2"></div>
+        <div class="rects3"></div>
+        <div class="sq_r">
+          <div class="sqt1"></div>
+          <div class="sqt2"></div>
+          <div class="sqt3"></div>
+        </div>
+        <div class="traps"></div>
+        <div class="hemism"></div>
+        <div class="circli"></div>
+        <div class="circbigli"></div>
+        <div class="trili"></div>
+        <div class="vlineli"></div>
+      </div>
+      <div class="rbox">
+        <div class="trio"></div>
+        <div class="trio1"></div>
+        <div class="trio2"></div>
+        <div class="trio3"></div>
+        <div class="window1">
+            <div class="wins1"></div>
+        </div>
+        <div class="window2"></div>
+        <div class="window3">
+            <div class="wins1"></div>
+        </div>
+        <div class="window4"></div>
+      </div>
+      <div class="lbox">
+        <div class="rbox">
+          <div class="trio"></div>
+          <div class="trio1"></div>
+          <div class="trio2"></div>
+          <div class="trio3"></div>
+          <div class="window1">
+         
+          </div>
+          <div class="window2"><div class="wins1"></div></div>
+          <div class="window3"> </div>
+         
+          <div class="window4"><div class="wins1"></div></div>
+        </div>
+      </div>
+      <div class="Mline"></div>
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+      <div class="line4"></div>
+      <div class="cir1"></div>
+      <div class="cir2"></div>
+      <div class="cir3">
+        <div class="cir1"></div>
+        <div class="cir2"></div>
+      </div>
+      <div class="cir4">
+        <div class="cir1"></div>
+        <div class="cir2"></div>
+      </div>
+      <div class="cir5">
+        <div class="cir1"></div>
+        <div class="cir2"></div>
+      </div>
+      <div class="tr1 pos1"></div>
+      <div class="tr1 pos2"></div>
+      <div class="tr1 pos3"></div>
+      <div class="tr1 pos4"></div>
+
+      <div class="mline2">
+        <div class="Mline"></div>
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+
+        <div class="cir1"></div>
+        <div class="cir2"></div>
+
+        <div class="cir4">
+          <div class="cir1"></div>
+          <div class="cir2"></div>
+        </div>
+        <div class="cir5">
+          <div class="cir1"></div>
+          <div class="cir2"></div>
+        </div>
+        <div class="tr1 pos1"></div>
+        <div class="tr1 pos4"></div>
+        <div class="tr1 pos3"></div>
+      </div>
+      <div class="tr1 pi3"></div>
+      <div class="ci1"></div>
+      <div class="ci2"></div>
+      <div class="line5"></div>
+
+      <div class="psq1">
+        <div class="sq5"></div>
+        <div class="sq6"></div>
+        <div class="sq7"></div>
+      </div>
+      <div class="arrr">
+        <div class="hemi"></div>
+        <div class="rect5"></div>
+        <div class="trapsmall"></div>
+        <div class="vline"></div>
+        <div class="trap"></div>
+        <div class="circ"></div>
+        <div class="circbig"></div>
+        <div class="tri"></div>
+      </div>
+      <div class="rigarr">
+        <div class="psq1">
+          <div class="sq5"></div>
+          <div class="sq6"></div>
+          <div class="sq7"></div>
+        </div>
+        <div class="arrr">
+          <div class="hemi"></div>
+          <div class="rect5"></div>
+          <div class="trapsmall"></div>
+          <div class="vline"></div>
+          <div class="trap"></div>
+          <div class="circ"></div>
+          <div class="circbig"></div>
+          <div class="tri"></div>
+        </div>
+        <div class="tombtri"></div>
+        <div class="tomb"></div>
+
+        <div class="mainbox1"></div>
+        <div class="mainbox"></div>
+        <div class="mainbor"></div>
+        <div class="maintrap">
+
+        </div>
+        <div class="main">
+          <div class="m"></div>
+          <div class="main1"></div>
+          <div class="main2"></div>
+          <div class="main3"></div>
+          <div class="main4"></div>
+          <div class="win1"></div>
+          <div class="win2"></div>
+        </div>
+<div class="dot">
+    <div class="dot1"></div>
+    <div class="dot2"></div>
+    <div class="dot3"></div>
+    <div class="dot4"></div>
+    <div class="dot5"></div>
+    <div class="dot6"></div>
+    <div class="dot7"></div>
+    <div class="dot8"></div>
+    <div class="dot9"></div>
+    <div class="dot10"></div>
+    <div class="dot11"></div>
+    <div class="dot12"></div>
+  
+   
+</div>
+<div class="border1"></div>
+<div class="border2"></div>
+<div class="line"></div>
+<div class="arc"></div>
+<div class="trapz"></div>
+<div class="circle">
+    <div class="circ"></div>   
+</div>
+<div class="circle1">
+<div class="circbig"></div></div>
+<div class="hemiset">
+    <div class ="hemitrap"></div>
+    <div class ="hemicir"></div>
+</div>
+<div class="linee"></div>
+      </div>
+      <div class="circl2">
+        <div class="circ"></div>  
+        <div class="tritop"></div> 
+    </div>
+    <div class="dotleft">
+        <div class="dot1"></div>
+    </div>
+  </body>
+</html>
